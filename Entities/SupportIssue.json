@@ -1,0 +1,108 @@
+{
+  "name": "SupportIssue",
+  "type": "object",
+  "properties": {
+    "client_reference_id": {
+      "type": "string",
+      "description": "Internal client reference ID"
+    },
+    "plugin_name": {
+      "type": "string",
+      "enum": [
+        "PDF Invoice",
+        "Product Feed",
+        "Gift Cards",
+        "Payment Gateway",
+        "Shipping Calculator",
+        "Inventory Manager",
+        "Email Marketing",
+        "Social Login",
+        "Review Manager",
+        "Backup Pro"
+      ],
+      "description": "Name of the plugin"
+    },
+    "plugin_version": {
+      "type": "string",
+      "description": "Version of the plugin"
+    },
+    "wordpress_version": {
+      "type": "string",
+      "description": "WordPress version"
+    },
+    "woocommerce_version": {
+      "type": "string",
+      "description": "WooCommerce version"
+    },
+    "issue_category": {
+      "type": "string",
+      "enum": [
+        "Activation",
+        "Template Issue",
+        "Export/Import",
+        "Payment Processing",
+        "Configuration",
+        "Performance",
+        "Compatibility",
+        "UI/UX Issue",
+        "Data Migration",
+        "Security"
+      ],
+      "description": "Category of the issue"
+    },
+    "issue_summary": {
+      "type": "string",
+      "description": "Brief summary of the issue"
+    },
+    "detailed_description": {
+      "type": "string",
+      "description": "Detailed description of the issue"
+    },
+    "steps_to_reproduce": {
+      "type": "string",
+      "description": "Steps to reproduce the issue"
+    },
+    "errors_logs": {
+      "type": "string",
+      "description": "Error messages and logs (no PII)"
+    },
+    "troubleshooting_steps": {
+      "type": "string",
+      "description": "Troubleshooting steps taken"
+    },
+    "resolution": {
+      "type": "string",
+      "description": "Resolution details"
+    },
+    "time_spent": {
+      "type": "number",
+      "description": "Time spent in minutes"
+    },
+    "escalated_to_dev": {
+      "type": "boolean",
+      "default": false,
+      "description": "Escalated to development team"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Open",
+        "Resolved",
+        "Escalated"
+      ],
+      "default": "Open",
+      "description": "Current status"
+    },
+    "recurring_issue": {
+      "type": "boolean",
+      "default": false,
+      "description": "Is this a recurring issue"
+    }
+  },
+  "required": [
+    "client_reference_id",
+    "plugin_name",
+    "issue_category",
+    "issue_summary"
+  ]
+}

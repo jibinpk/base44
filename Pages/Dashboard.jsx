@@ -4,7 +4,7 @@ import { SupportIssue } from "@/entities/SupportIssue";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer, PieChart, Pie, Cell, LineChart, Line, Tooltip, Legend } from 'recharts';
 import { Clock, AlertTriangle, CheckCircle, TrendingUp, Plus } from "lucide-react";
 
-import StatsCard from "../components/dashboard/StatsCard";
+import StatsCard from "../Components/dashboard/StatsCard.jsx";
 import ChartCard from "../components/dashboard/ChartCard";
 import IssueModal from "../components/issues/IssueModal";
 

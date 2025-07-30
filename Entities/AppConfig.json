@@ -1,0 +1,22 @@
+{
+  "name": "AppConfig",
+  "type": "object",
+  "properties": {
+    "key": {
+      "type": "string",
+      "description": "The configuration key (e.g., 'plugin_options'). Should be unique.",
+      "is_unique": true
+    },
+    "value": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "The list of configuration values."
+    }
+  },
+  "required": [
+    "key",
+    "value"
+  ]
+}
