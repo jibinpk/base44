@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import { SupportIssue } from "@/entities/SupportIssue";
 import { Plus, Search, Filter, Grid, List, Kanban } from "lucide-react";
 
-import IssueModal from "../components/issues/IssueModal";
-import TableView from "../components/issues/TableView";
-import KanbanView from "../components/issues/KanbanView";
-import FilterPanel from "../components/issues/FilterPanel";
-import SearchBar from "../components/issues/SearchBar";
+import IssueModal from "../Components/issues/IssueModal";
+import TableView from "../Components/issues/TableView";
+import KanbanView from "../Components/issues/KanbanView";
+import FilterPanel from "../Components/issues/FilterPanel";
+import SearchBar from "../Components/issues/SearchBar";
 
 export default function Issues() {
   const [issues, setIssues] = useState([]);
